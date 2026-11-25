@@ -10,7 +10,9 @@ set(CMAKE_C_EXTENSIONS OFF)
 set(CMAKE_C_FLAGS_DEBUG "-g -O0 -fsanitize=address,undefined")
 set(CMAKE_EXE_LINKER_FLAGS_DEBUG "-fsanitize=address,undefined")
 
-add_executable(cstore src/main.c)
+#add_executable(cstore "src/Step 1 - Basics/main.c"
+#        "src/Step 1 - Basics/mathx.c"
+#        "src/Step 1 - Basics/range.c")
 
 target_compile_options(cstore PRIVATE
         -Wall
